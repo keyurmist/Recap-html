@@ -15,12 +15,23 @@
         Click Here
       </button>
     </a>
-    <br>
+    <br />
     <!--onclick is a built in JS function for html-->
     <button
-        onclick="doSomething() "style=background-color: black; color: blueviolet; border-radius: 5px"
-      >
-        Click Here
-      </button>
+      onclick="doSomething()"
+      style="background-color: black; color: blueviolet; border-radius: 5px"
+    >
+      Click Here
+    </button>
+
+    <p id="test">Hello</p>
+
+    <!--when the button is clicked, doSomething is fired, when the button is clicked, the text within the test id is changed to Goodbye-->
+
+    <script>
+      function doSomething() {
+        document.getElementById("test").innerHTML = "Goodbye";
+      }
+    </script>
   </body>
 </html>
