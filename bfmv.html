@@ -84,9 +84,18 @@
     </dl>
 
     <button
+      onclick="clickMe()"
       style="font-size: 25; background-color: lightblue; border-radius: 5px"
     >
       Click if you like BFMV
     </button>
+
+    <p id="agree">Yes</p>
+
+    <script>
+      function clickMe() {
+        document.getElementById("agree").innerHTML = "YAAAS";
+      }
+    </script>
   </body>
 </html>
