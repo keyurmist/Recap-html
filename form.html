@@ -8,8 +8,18 @@
   <body>
     <form action="index.php" method="POST">
       <label for="username">Username:</label>
-      <input type="text" id="username" />
+      <input
+        type="text"
+        id="username"
+        placeholder="Text"
+        minlength="8"
+        required
+      />
+      <label for="password">Password:</label>
+      <input type="password" id="password" minlength="6" />
+      <input type="reset" />
       <input type="submit" />
+      <br />
     </form>
   </body>
 </html>
