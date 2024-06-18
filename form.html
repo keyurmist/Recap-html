@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="index.php" method="POST">
+    <form action="index.php" method="POST" enctype="multipart/form-data">
       <label for="username">Username:</label>
       <input
         type="text"
@@ -47,6 +47,15 @@
         <option value="Visa">Visa</option>
         <option value="Doge Coin">Doge Coin</option>
       </select>
+
+      <label for="subscribe">Subscribe</label>
+      <input type="checkbox" id="subscribe" />
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" rows="3" cols="25"></textarea>
+
+      <label for="file">File:</label>
+      <input type="file" id="file" accept="image/png, image/jpeg" />
 
       <input type="reset" />
       <input type="submit" />
